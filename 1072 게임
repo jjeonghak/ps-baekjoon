@@ -14,7 +14,6 @@ int main(void) {
 		int le = 0;
 		int ri = 1000000000;
 		int mid, k;
-		double n;
 		while (le <= ri) {
 			mid = (le + ri) / 2;
 			k = 100 * (y + mid) / (x + mid);

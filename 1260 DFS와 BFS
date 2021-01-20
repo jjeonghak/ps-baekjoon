@@ -24,7 +24,7 @@ void bfs(int x) {
 		q.pop(); //방문한 노드 제거
 		cout << now << " ";
 		for (int i = 0; i < v[now].size(); i++) { //현재 노드에 연결된 만큼
-			if (!c2[v[now][i]]) { //방문ㅎ지 않았을 경우 큐에 삽입
+			if (!c2[v[now][i]]) { //방문하지 않았을 경우 큐에 삽입
 				q.push(v[now][i]); 
 				c2[v[now][i]] = true;
 			}

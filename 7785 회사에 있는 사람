@@ -28,7 +28,7 @@ int main(void) {
 	vector<pair<string, int>>::iterator j;
 
 	for (j = vec.begin(); j != vec.end(); j++) {
-		if (j->second != 0) cout << j->first << "\n"; //포인터 형식으로
+		if (j->second != 0) cout << j->first << "\n"; //포인터 형식으로, printf로 실행 
 	}
 	return 0;
 }

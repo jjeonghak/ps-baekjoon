@@ -3,7 +3,7 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-map<string, int>m; 
+map<string, int>m; //map을 사용, 정렬은 새로운 벡터로
 
 bool compare(const pair<string,int>& a,const pair<string,int>& b) {
 	return a.first > b.first;

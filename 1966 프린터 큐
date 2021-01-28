@@ -30,9 +30,7 @@ int main(void) {
 					break;
 				}
 			}
-			else {
-				q.push({ ind,pri }); //우선순위가 낮아 뒤로 보냄
-			}
+			else q.push({ ind,pri }); //우선순위가 낮아 뒤로 보냄			
 		}
 	}
 	return 0;

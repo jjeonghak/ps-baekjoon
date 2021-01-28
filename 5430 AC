@@ -40,10 +40,10 @@ int main(void) {
 					else dq.pop_back(); //역방향
 				}
 				else if (s[i] == 'R') {
-					c = !c; //이렇게 안하고 매번 배열 순서 변경시 시간초과
+					c = !c; //이렇게 안하고 매번 배열순서 변경시 시간초과
 				}
 		}
-		if (!c && b) { //최존적인 배열이 역순일 경우 순서변경
+		if (!c && b) { //최종적인 배열이 역순일 경우 배열순서 변경
 			int temp1 = dq.size();
 			for (int i = 1; i < temp1; i++) { 
 				arr[i] = dq.front();

@@ -12,7 +12,7 @@ int main(void) {
 	}
 	while (1) {
 		int m = n - k;
-		if (l > 100 || m<0) {
+		if (l > 100 || m<0) { //음수인 경우, 길이100 이상인 경우 제외
 			b = false;
 			break;
 		}

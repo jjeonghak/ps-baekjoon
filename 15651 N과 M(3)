@@ -17,7 +17,6 @@ void sol(int k) {
 		if (!c[i]) { 
 			a[k] = i; 
 			sol(k + 1);
-			
 		}
 	}
 }

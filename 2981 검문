@@ -1,5 +1,5 @@
 #include<iostream>
-#include<algorithm>
+#include<algorithm> //unique(), sort() 포함 
 #include<vector>
 using namespace std;
 

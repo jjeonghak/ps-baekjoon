@@ -1,0 +1,39 @@
+#include<iostream>
+#include<queue>
+#include<vector>
+using namespace std;
+
+int n, m;
+int start, done;
+int INF = 987654321;
+priority_queue<pair<int, int>> pq;
+vector<pair<int, int>> v[1001];
+int dis[1001];
+
+int main(void) {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cin >> n >> m;
+	for (int i = 0; i < m; i++) {
+		int x, y, z;
+		cin >> x >> y >> z;
+		v[x].push_back({ y, z });
+	}
+	cin >> start >> done;
+	for (int i = 1; i <= n; i++) dis[i] = INF;
+	dis[start] = 0;
+	pq.push({ 0,start });
+	while (!pq.empty()) {
+		int now = pq.top().second;
+		int nowdis = -pq.top().first;
+		pq.pop();
+		for (int i = 0; i < v[now].size(); i++) {
+			if (dis[v[now][i].first] >= nowdis + v[now][i].second) {
+				dis[v[now][i].first] = nowdis + v[now][i].second;
+				pq.push({ -dis[v[now][i].first],v[now][i].first });
+			}
+		}
+	}
+	cout << dis[done];
+	return 0;
+}

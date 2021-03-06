@@ -27,7 +27,7 @@ void topologySort() {
 		}
 	}
 	for (int i = 1; i <= n; i++) {
-		printf("%d ", result[i]);
+		printf("%d\", result[i]);
 	}
 }
 

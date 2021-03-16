@@ -15,7 +15,7 @@ int main(void) {
 		int k;
 		for (int i = 1; i <= dq.size(); i++) {
 			if (dq[i] == a) {
-				k = i; //큐에서 a의 위치
+				k = i; // 큐에서 a의 위치
 				break;
 			}
 		}

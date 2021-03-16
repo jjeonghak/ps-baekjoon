@@ -26,9 +26,7 @@ int main(void) {
 			cin >> a;
 			arr[i] = a;
 		}
-		for (int i = 1; i <= n; i++) {
-			if (!c[i]) dfs(i);
-		}
+		for (int i = 1; i <= n; i++) if (!c[i]) dfs(i);
 		cout << ans << "\n";
 		ans = 0;
 		for (int i = 1; i <= n; i++) {
